@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 //rutas
 app.get('/', (req, resp) => {
     resp.status(200).send(
-        "<h1> Mi primera API con NodeJS</h1>"
+        "<h1>API con NodeJS</h1>"
     );
 });
 
