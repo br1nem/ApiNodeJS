@@ -1,6 +1,6 @@
 'use strict'
 
-var mongooaew = require('mongoose');
+var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var ProjectSchema = Schema({
@@ -8,7 +8,8 @@ var ProjectSchema = Schema({
     description: String, 
     category: String, 
     year: Number, 
-    langs: [String]
+    langs: String,
+    image: String
 });
 
 module.exports = mongoose.model('Project', ProjectSchema);
